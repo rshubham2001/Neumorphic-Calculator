@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(230, 221, 221);
+    font-family: sans-serif;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    background-color: rgb(230, 221, 221);
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: inset 5px 5px 12px #ffff, 5px 5px 12px rgb(0, 0, 0, 0.16);
+    width: 440px;
+
+}
+
+.display {
+    border-radius: 30px;
+}
+
+.display #screen {
+    width: 97%;
+    outline: none;
+    border: none;
+    text-align: end;
+    height: 70px;
+    padding: 15px;
+    font-size: 60px;
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+    margin-top: 45px;
+    margin-bottom: 40px;
+    border-radius: 28px;
+    background-color: rgb(220, 253, 255);
+    box-shadow: inset -8px -8px 12px rgb(252, 250, 255), inset 8px 8px 12px rgba(0, 0, 0, 0.16);
+}
+
+.btns {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 28px;
+    display: flex;
+    flex-direction: column;
+}
+
+.btns .row {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.btns .row button {
+    width: 68px;
+    height: 68px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    background-color: rgb(243, 234, 234);
+    border-radius: 50%;
+    margin: 4px;
+    cursor: pointer;
+    box-shadow: inset 5px 5px 8px #ffff, inset -5px -5px 8px rgb(0, 0, 0, 0.16);
+}
+
+.btns .row button:active {
+    box-shadow: 5px 5px 8px #ffff, -5px -5px 8px rgb(0, 0, 0, 0.16);
+}
+
+#clr {
+    background-color: rgb(231, 20, 143);
+    color: white;
+    box-shadow: inset 5px 5px 8px rgba(255, 255, 255, 0.699), inset -5px -5px 8px rgba(0, 0, 0, 0.16);
+}
+
+#clr:active {
+    box-shadow: 5px 5px 8px rgb(255, 255, 255), -5px -5px 8px rgb(0, 0, 0, 0.16);
+}
+
+#del {
+    background-color: rgb(217, 231, 20);
+    color: white;
+    box-shadow: inset 5px 5px 8px rgba(255, 255, 255, 0.699), inset -5px -5px 8px rgba(0, 0, 0, 0.16);
+    width: 107px;
+    border-radius: 30%;
+}
+
+#del:active {
+    box-shadow: 5px 5px 8px rgb(255, 255, 255), -5px -5px 8px rgb(0, 0, 0, 0.16);
+}
+
+#equal {
+    background-color: rgb(55, 231, 20);
+    color: white;
+    box-shadow: inset 5px 5px 8px rgba(255, 255, 255, 0.699), inset -5px -5px 8px rgba(0, 0, 0, 0.16);
+    width: 107px;
+    border-radius: 30%;
+}
+
+#equal:active {
+    box-shadow: 5px 5px 8px rgb(255, 255, 255), -5px -5px 8px rgb(0, 0, 0, 0.16);
+}
+
+#point {
+    font-weight: bold;
+}
+
+button {
+    border: 2px solid red;
+}
